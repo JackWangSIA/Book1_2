@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2019b"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 18px; min-height: 0px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 15px; font-weight: 700; text-align: left;  }
+.S1 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
+.S2 { border-left: 0.994318px solid rgb(233, 233, 233); border-right: 0.994318px solid rgb(233, 233, 233); border-top: 0.994318px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S3 { border-left: 0.994318px solid rgb(233, 233, 233); border-right: 0.994318px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S4 { border-left: 0.994318px solid rgb(233, 233, 233); border-right: 0.994318px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 0.994318px solid rgb(233, 233, 233); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S5 { color: rgb(64, 64, 64); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px; overflow-x: hidden; line-height: 16.996px;  }
+.embeddedOutputsErrorElement {min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsErrorElement.inlineElement {}
+.embeddedOutputsErrorElement.rightPaneElement {}
+.embeddedOutputsWarningElement{min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsWarningElement.inlineElement {}
+.embeddedOutputsWarningElement.rightPaneElement {}
+.diagnosticMessage-wrapper {font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType {color: rgb(255,100,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType a {color: rgb(255,100,0); text-decoration: underline;}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType {color: rgb(230,0,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType a {color: rgb(230,0,0); text-decoration: underline;}
+.diagnosticMessage-wrapper .diagnosticMessage-messagePart,.diagnosticMessage-wrapper .diagnosticMessage-causePart {white-space: pre-wrap;}
+.diagnosticMessage-wrapper .diagnosticMessage-stackPart {white-space: pre;}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement {white-space: pre; word-wrap: initial; min-height: 18px; max-height: 250px; overflow: auto;}
+.textElement,.rtcDataTipElement .textElement {padding-top: 3px;}
+.embeddedOutputsTextElement.inlineElement,.embeddedOutputsVariableStringElement.inlineElement {}
+.inlineElement .textElement {}
+.embeddedOutputsTextElement.rightPaneElement,.embeddedOutputsVariableStringElement.rightPaneElement {min-height: 16px;}
+.rightPaneElement .textElement {padding-top: 2px; padding-left: 9px;}
+.S6 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.S7 { border-left: 0.994318px solid rgb(233, 233, 233); border-right: 0.994318px solid rgb(233, 233, 233); border-top: 0.994318px solid rgb(233, 233, 233); border-bottom: 0.994318px solid rgb(233, 233, 233); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.variableValue { width: 100% !important; }
+.embeddedOutputsMatrixElement,.eoOutputWrapper .matrixElement {min-height: 18px; box-sizing: border-box;}
+.embeddedOutputsMatrixElement .matrixElement,.eoOutputWrapper .matrixElement,.rtcDataTipElement .matrixElement {position: relative;}
+.matrixElement .variableValue,.rtcDataTipElement .matrixElement .variableValue {white-space: pre; display: inline-block; vertical-align: top; overflow: hidden;}
+.embeddedOutputsMatrixElement.inlineElement {}
+.embeddedOutputsMatrixElement.inlineElement .topHeaderWrapper {display: none;}
+.embeddedOutputsMatrixElement.inlineElement .veTable .body {padding-top: 0 !important; max-height: 100px;}
+.inlineElement .matrixElement {max-height: 300px;}
+.embeddedOutputsMatrixElement.rightPaneElement {}
+.rightPaneElement .matrixElement,.rtcDataTipElement .matrixElement {overflow: hidden; padding-left: 9px;}
+.rightPaneElement .matrixElement {margin-bottom: -1px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer,.eoOutputWrapper .matrixElement .valueContainer,.rtcDataTipElement .matrixElement .valueContainer {white-space: nowrap; margin-bottom: 3px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis.hide,.embeddedOutputsMatrixElement .matrixElement .verticalEllipsis.hide,.eoOutputWrapper .matrixElement .valueContainer .horizontalEllipsis.hide,.eoOutputWrapper .matrixElement .verticalEllipsis.hide,.rtcDataTipElement .matrixElement .valueContainer .horizontalEllipsis.hide,.rtcDataTipElement .matrixElement .verticalEllipsis.hide {display: none;}
+.embeddedOutputsVariableMatrixElement .matrixElement .valueContainer.hideEllipses .verticalEllipsis, .embeddedOutputsVariableMatrixElement .matrixElement .valueContainer.hideEllipses .horizontalEllipsis {display:none;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis,.eoOutputWrapper .matrixElement .valueContainer .horizontalEllipsis {margin-bottom: -3px;}
+.eoOutputWrapper .embeddedOutputsVariableMatrixElement .matrixElement .valueContainer {cursor: default !important;}
+.embeddedOutputsVariableElement {white-space: pre-wrap; word-wrap: break-word; min-height: 18px; max-height: 250px; overflow: auto;}
+.variableElement {}
+.embeddedOutputsVariableElement.inlineElement {}
+.inlineElement .variableElement {}
+.embeddedOutputsVariableElement.rightPaneElement {min-height: 16px;}
+.rightPaneElement .variableElement {padding-top: 2px; padding-left: 9px;}
+.variableNameElement {margin-bottom: 3px; display: inline-block;}
+.matrixElement .horizontalEllipsis,.rtcDataTipElement .matrixElement .horizontalEllipsis {display: inline-block; margin-top: 3px; width: 30px; height: 12px; background-repeat: no-repeat; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAJCAYAAADO1CeCAAAAJUlEQVR42mP4//8/A70xw0i29BUDFPxnAEtTW37wWDqakIa4pQDvOOG89lHX2gAAAABJRU5ErkJggg==");}
+.matrixElement .verticalEllipsis,.textElement .verticalEllipsis,.rtcDataTipElement .matrixElement .verticalEllipsis,.rtcDataTipElement .textElement .verticalEllipsis {margin-left: 35px; width: 12px; height: 30px; background-repeat: no-repeat; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAZCAYAAAAIcL+IAAAALklEQVR42mP4//8/AzGYgWyFMECMwv8QddRS+P//KyimlmcGUOFoOI6GI/UVAgDnd8Dd4+NCwgAAAABJRU5ErkJggg==");}
+.S8 { border-left: 0.994318px solid rgb(233, 233, 233); border-right: 0.994318px solid rgb(233, 233, 233); border-top: 0.994318px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 6px 45px 0px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S9 { border-left: 0.994318px solid rgb(233, 233, 233); border-right: 0.994318px solid rgb(233, 233, 233); border-top: 0.994318px solid rgb(233, 233, 233); border-bottom: 0.994318px solid rgb(233, 233, 233); border-radius: 0px; padding: 6px 45px 4px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }</style></head><body><div class = rtcContent><h4  class = 'S0'><span>EX 6-1 </span><span style=' font-family: monospace;'>if</span><span style=' font-family: monospace;'>-else</span><span style=' font-family: monospace;'>语句</span></h4><div  class = 'S1'><span style=' font-family: monospace;'>1.判断两个数组相等</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>A = [1 2 3]; B = [1 2 4];</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">if </span><span>~isequal(A,B) </span><span style="color: rgb(60, 118, 61);">% 如果不相同</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>   disp(</span><span style="color: rgb(160, 32, 240);">'A and B are not the same vector.'</span><span>)</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="03B5430A" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="18" data-hashorizontaloverflow="false" data-testid="output_0" style="max-height: 261px; width: 1088.03px;"><div class="textElement">A and B are not the same vector.</div></div></div></div></div><div  class = 'S6'><span style=' font-family: monospace;'>2.判断两个字符串相等</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>reply = </span><span style="color: rgb(160, 32, 240);">'yes'</span><span>;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">if </span><span>strcmp(reply,</span><span style="color: rgb(160, 32, 240);">'yes'</span><span>)</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>  disp(</span><span style="color: rgb(160, 32, 240);">'Your reply is "yes"!'</span><span>)</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="3159D3EB" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="18" data-hashorizontaloverflow="false" data-testid="output_1" style="max-height: 261px; width: 1088.03px;"><div class="textElement">Your reply is "yes"!</div></div></div></div></div><h4  class = 'S0'><span>EX 6-2 </span><span style=' font-family: monospace;'>switch-case语句</span></h4><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>order = </span><span style="color: rgb(160, 32, 240);">'food'</span><span>;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">switch </span><span>order</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">case </span><span style="color: rgb(160, 32, 240);">'food' </span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>        disp(</span><span style="color: rgb(160, 32, 240);">'OK, food is coming!'</span><span>)</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">case </span><span>{</span><span style="color: rgb(160, 32, 240);">'drink'</span><span>,</span><span style="color: rgb(160, 32, 240);">'fruit'</span><span>}</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>        disp(</span><span style="color: rgb(160, 32, 240);">'We do not have any.'</span><span>)</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">otherwise</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>        disp(</span><span style="color: rgb(160, 32, 240);">'Have no idea.'</span><span>)</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="4B2EF8F7" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="18" data-hashorizontaloverflow="false" data-testid="output_2" style="max-height: 261px; width: 1088.03px;"><div class="textElement">OK, food is coming!</div></div></div></div></div><h4  class = 'S0'><span>EX 6-3 for</span><span style=' font-family: monospace;'>语句</span></h4><div  class = 'S1'><span style=' font-family: monospace;'>1.向量</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>vector = [1 2 4];</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>i = vector</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    disp(i)</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="99EF2926" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="75" data-hashorizontaloverflow="false" data-testid="output_3" style="max-height: 261px; width: 1088.03px;"><div class="textElement">     1
+
+     2
+
+     4</div></div></div></div></div><div  class = 'S6'><span style=' font-family: monospace;'>2.矩阵</span></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S7'><span style="white-space: pre;"><span>matrix = rand(3,3)</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="34D539DA" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-testid="output_4" style="width: 1088.03px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 1058px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="headerElementClickToInteract" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">matrix = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">3×3</span></div></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:66,&quot;totalColumns&quot;:3,&quot;totalRows&quot;:3,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 200px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">    0.8147    0.9134    0.2785
+    0.9058    0.6324    0.5469
+    0.1270    0.0975    0.9575
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>j = matrix</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    disp(j)</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="CD88621F" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="163" data-hashorizontaloverflow="false" data-testid="output_5" style="max-height: 261px; width: 1088.03px;"><div class="textElement">    0.8147
+    0.9058
+    0.1270
+
+    0.9134
+    0.6324
+    0.0975
+
+    0.2785
+    0.5469
+    0.9575</div></div></div></div></div><div  class = 'S6'><span style=' font-family: monospace;'>3.字符</span></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S7'><span style="white-space: pre;"><span>str = {</span><span style="color: rgb(160, 32, 240);">'a'</span><span>,</span><span style="color: rgb(160, 32, 240);">'b'</span><span>,</span><span style="color: rgb(160, 32, 240);">'c'</span><span>}</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextMatrixElement embeddedOutputsVariableMatrixElement" uid="DCB0203A" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-testid="output_6" style="width: 1088.03px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement" style="width: 1058px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="headerElementClickToInteract" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">str = </span><span class="veVariableValueSummary headerElement" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">1×3 cell 数组</span></div></div><div class="valueContainer" data-layout="{&quot;totalRows&quot;:1,&quot;totalColumns&quot;:3}" style="white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 246px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">'a'          'b'          'c'          <br></div><div class="horizontalEllipsis hide" style="white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>k = str</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    disp(k)</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="C1240BB7" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="75" data-hashorizontaloverflow="false" data-testid="output_7" style="max-height: 261px; width: 1088.03px;"><div class="textElement">    'a'
+
+    'b'
+
+    'c'</div></div></div></div></div><div  class = 'S1'><span style=' font-weight: bold;'>EX 6-4 while</span><span style=' font-weight: bold; font-family: monospace;'>语句</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>n = 10;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>fact = n;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">while </span><span>n &gt; 1</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    n = n-1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    fact = fact*n</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 90</div><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 720</div><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 5040</div><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 30240</div><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 151200</div><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 604800</div><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 1814400</div><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 3628800</div><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; '>fact = 3628800</div></div></div><div class="inlineWrapper outputs"><div  class = 'S9'><span style="white-space: pre;"><span>disp([</span><span style="color: rgb(160, 32, 240);">'n! = ' </span><span>num2str(fact)])</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="A47ABA7F" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="18" data-hashorizontaloverflow="false" data-testid="output_17" style="max-height: 261px; width: 1088.03px;"><div class="textElement">n! = 3628800</div></div></div></div></div><div  class = 'S1'><span style=' font-weight: bold;'>EX 6-5 break</span><span style=' font-weight: bold; font-family: monospace;'>语句</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>limit = 0.8;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">while </span><span>1</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    temp = rand;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">if </span><span>temp &gt; limit</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>        disp(temp)</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>        </span><span style="color: rgb(0, 0, 255);">break</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="0B940DAF" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="18" data-hashorizontaloverflow="false" data-testid="output_18" style="max-height: 261px; width: 1088.03px;"><div class="textElement">    0.9649</div></div></div></div></div><div  class = 'S1'><span style=' font-weight: bold;'>EX 6-6 continue</span><span style=' font-weight: bold; font-family: monospace;'>语句</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>n = 1:40</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">if </span><span>mod(n,7)</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>        </span><span style="color: rgb(0, 0, 255);">continue</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    disp([</span><span style="color: rgb(160, 32, 240);">'Divisible by 7: ' </span><span>num2str(n)])</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="25144BAB" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="75" data-hashorizontaloverflow="false" data-testid="output_19" style="max-height: 261px; width: 1088.03px;"><div class="textElement">Divisible by 7: 7
+Divisible by 7: 14
+Divisible by 7: 21
+Divisible by 7: 28
+Divisible by 7: 35</div></div></div></div></div><div  class = 'S1'><span style=' font-weight: bold;'>EX 6-7 try-catch</span><span style=' font-weight: bold; font-family: monospace;'>语句</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>A=[1 2; 3 4]; B=[2 4; 2 3; 3 4];</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">try</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    A*B</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">catch</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span>    disp(</span><span style="color: rgb(160, 32, 240);">'Error multiplying A*B'</span><span>)</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="486E0BA7" data-scroll-top="null" data-scroll-left="null" data-width="1058" data-height="18" data-hashorizontaloverflow="false" data-testid="output_20" style="max-height: 261px; width: 1088.03px;"><div class="textElement">Error multiplying A*B</div></div></div></div></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+% EX 6-1 |if-else语句|
+% |1.判断两个数组相等|
+
+A = [1 2 3]; B = [1 2 4];
+if ~isequal(A,B) % 如果不相同
+   disp('A and B are not the same vector.')
+end
+%% 
+% |2.判断两个字符串相等|
+
+reply = 'yes';
+if strcmp(reply,'yes')
+  disp('Your reply is "yes"!')
+end
+% EX 6-2 |switch-case语句|
+
+order = 'food';
+switch order
+    case 'food' 
+        disp('OK, food is coming!')
+    case {'drink','fruit'}
+        disp('We do not have any.')
+    otherwise
+        disp('Have no idea.')
+end
+% EX 6-3 for|语句|
+% |1.向量|
+
+vector = [1 2 4];
+for i = vector
+    disp(i)
+end
+%% 
+% |2.矩阵|
+
+matrix = rand(3,3)
+for j = matrix
+    disp(j)
+end
+%% 
+% |3.字符|
+
+str = {'a','b','c'}
+for k = str
+    disp(k)
+end
+%% 
+% *EX 6-4 while|语句*|
+
+n = 10;
+fact = n;
+while n > 1
+    n = n-1;
+    fact = fact*n
+end
+disp(['n! = ' num2str(fact)])
+%% 
+% *EX 6-5 break|语句*|
+
+limit = 0.8;
+while 1
+    temp = rand;
+    if temp > limit
+        disp(temp)
+        break
+    end
+end
+%% 
+% *EX 6-6 continue|语句*|
+
+for n = 1:40
+    if mod(n,7)
+        continue
+    end
+    disp(['Divisible by 7: ' num2str(n)])
+end
+%% 
+% *EX 6-7 try-catch|语句*|
+
+A=[1 2; 3 4]; B=[2 4; 2 3; 3 4];
+try
+    A*B
+catch
+    disp('Error multiplying A*B')
+end
+##### SOURCE END #####
+--></body></html>
